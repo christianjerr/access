@@ -74,5 +74,3 @@ function courses(){
 	
 }
 
-
-console.log(window.innerWidth);

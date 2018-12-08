@@ -46,6 +46,7 @@ header {
   color: #ccc;
   margin: auto;
   width: 100%;
+  background-attachment: fixed;
   /* greeting title */ }
   @media (max-width: 768px) {
     header {

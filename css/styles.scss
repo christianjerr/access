@@ -106,6 +106,7 @@ header{
 	color : #ccc;
 	margin: auto;
 	width : 100%;
+	background-attachment : fixed;
 	
 	
 	@include small-screen{
