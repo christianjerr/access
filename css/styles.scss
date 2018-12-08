@@ -1,0 +1,147 @@
+/* global */
+*{
+	font-family : century gothic;
+}
+
+
+*{
+	line-height : 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* customize megatron */
+
+.megatron {
+	padding : 25px;
+	background : rgba(0,0,0,0.5);
+	box-sizing: border-box;
+	border-radius : 10px;
+}
+
+
+/* mixins */
+
+$small-screen : 768px;
+
+@mixin small-screen{
+	@media (max-width : #{$small-screen}){
+		@content;
+	}
+};
+
+
+
+
+
+
+
+
+/* colors */
+
+$colors : (
+	transparent : rgba(0,0,0,0.5)
+);
+
+@function colors($get-color){
+	@return map-get($colors , $get-color)
+}
+
+/* navbar color */
+
+.navbar-custom{
+	background : black;
+	position : fixed;
+	width : 100%;
+	z-index: 3000;
+
+}
+
+/* logo */
+
+#logo{
+	height: 30px;
+}
+
+/* header  */
+body{
+	background : #f1f1f1;
+}
+header{
+	background : linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/wallpaper.jpg);
+	background-size : cover;
+	background-position : center;
+	height : 100vh;
+	color : #ccc;
+	margin: auto;
+	width : 100%;
+	
+	
+	@include small-screen{
+		height : 100%;
+		padding-bottom : 50px;
+		}
+	
+	
+	/* greeting title */
+	
+	#my-title{
+		font-size : 70px;
+		text-shadow : 0px 0px 5px black;
+		opacity: 0;
+		
+		@include small-screen{
+			font-size : 3rem;
+			text-align : center !important;
+		}
+	}
+	
+}
+
+/* access brusiour */
+
+
+.banner img{
+	width : 400px;
+	box-shadow : 5px 5px 5px black;
+	
+	@include small-screen{
+			width : 200px;
+	}
+}
+
+
+/* all a tags */
+a{
+	cursor : pointer !important;
+}
+
+
+/* drop down navbar */
+
+.dropdown-menu{
+	width : 200px;
+	padding-left : 10px;
+}
+
+/* main container */
+
+.container{
+	padding : 0px 100px 0px 200px;
+	
+	@include small-screen{
+			padding : 0px 0px 0px 20px !important;
+			width : 100% !important; 
+	}
+}
+
+
+
