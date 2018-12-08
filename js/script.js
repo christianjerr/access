@@ -34,7 +34,7 @@ function admission(){
 		});
 	}else{
 		window.scrollTo({
-			top : 3250,
+			top : 3190,
 			behavior : 'smooth'
 		});
 	}
@@ -67,7 +67,7 @@ function courses(){
 		});
 	}else{
 		window.scrollTo({
-			top : 4100,
+			top : 4080,
 			behavior : 'smooth'
 		});
 	}
