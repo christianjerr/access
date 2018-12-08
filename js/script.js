@@ -11,38 +11,68 @@ function greet(){
 /* scroll to about */
 
 function aboutUs(){
-	window.scrollTo({
+	if(window.innerWidth > 768){
+		window.scrollTo({
 		top : 1300,
 		behavior : 'smooth'
-	});
+		});
+	}else{
+		window.scrollTo({
+		top : 1650,
+		behavior : 'smooth'
+		});
+	}
 	
 }
 /* scroll to admission */
 
 function admission(){
-	window.scrollTo({
-		top : 2050,
-		behavior : 'smooth'
-	});
+	if(window.innerWidth > 768){		
+		window.scrollTo({
+			top : 2050,
+			behavior : 'smooth'
+		});
+	}else{
+		window.scrollTo({
+			top : 3250,
+			behavior : 'smooth'
+		});
+	}
 	
 }
 
 /* mission vision */
 function missionVision(){
-	window.scrollTo({
+	if(window.innerWidth > 768){
+		window.scrollTo({
 		top : 630,
 		behavior : 'smooth'
+		});
+	}else{
+		window.scrollTo({
+		top : 950,
+		behavior : 'smooth'
 	});
+	}
 	
 }
 
 
 /* courses */
 function courses(){
-	window.scrollTo({
-		top : 2800,
-		behavior : 'smooth'
-	});
+	if(window.innerWidth > 768){		
+		window.scrollTo({
+			top : 2800,
+			behavior : 'smooth'
+		});
+	}else{
+		window.scrollTo({
+			top : 4100,
+			behavior : 'smooth'
+		});
+	}
 	
 }
 
+
+console.log(window.innerWidth);
