@@ -1,13 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400);
-
-
 /* global */
-h1{
-	font-weight : 100;
-}
-*{
-	font-family: 'Raleway', sans-serif;
-}
+* {
+  font-family: century gothic; }
 
 * {
   line-height: 1.4; }
@@ -28,13 +21,20 @@ h1{
   width: 100%;
   z-index: 3000; }
 
+/* greetings padding */
+/* greeting margin */
+#greeting-margin {
+  padding: 150px 100px 0px 100px; }
+  @media (max-width: 768px) {
+    #greeting-margin {
+      padding: 50px 10px; } }
+
 /* logo */
 #logo {
   height: 30px; }
 
 /* header  */
-body {	
-font-family: 'Raleway', sans-serif !important;
+body {
   background: #f1f1f1; }
 
 header {

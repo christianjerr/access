@@ -65,6 +65,25 @@ $colors : (
 
 }
 
+
+/* greetings padding */
+
+
+/* greeting margin */
+
+#greeting-margin{
+	padding : 150px 100px 0px 100px;
+	
+	@include small-screen{
+		padding: 50px 10px;
+	
+		}
+	
+}  
+
+
+
+
 /* logo */
 
 #logo{
