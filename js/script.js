@@ -12,7 +12,7 @@ function greet(){
 
 function aboutUs(){
 	window.scrollTo({
-		top : 1450,
+		top : 1300,
 		behavior : 'smooth'
 	});
 	
@@ -21,7 +21,7 @@ function aboutUs(){
 
 function admission(){
 	window.scrollTo({
-		top : 2160,
+		top : 2050,
 		behavior : 'smooth'
 	});
 	
@@ -31,6 +31,16 @@ function admission(){
 function missionVision(){
 	window.scrollTo({
 		top : 630,
+		behavior : 'smooth'
+	});
+	
+}
+
+
+/* courses */
+function courses(){
+	window.scrollTo({
+		top : 2800,
 		behavior : 'smooth'
 	});
 	
