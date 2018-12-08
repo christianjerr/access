@@ -74,3 +74,16 @@ function courses(){
 	
 }
 
+let h4 = document.getElementsByTagName('h4');
+Array.from(h4).forEach(function(items){
+	items.addEventListener('mousemove' , function(){
+		items.setAttribute('style' , ' transition : 1s ; font-size : 30px ; ')
+	})
+})
+Array.from(h4).forEach(function(items){
+	items.addEventListener('mouseleave' , function(){
+		items.setAttribute('style' , 'text-shadow : 0px 0px 0px white ; transition : 1s')
+	})
+})
+
+
