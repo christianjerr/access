@@ -1,6 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400);
+
+
 /* global */
-* {
-  font-family: century gothic; }
+h1{
+	font-weight : 100;
+}
+*{
+	font-family: 'Raleway', sans-serif;
+}
 
 * {
   line-height: 1.4; }
@@ -26,7 +33,8 @@
   height: 30px; }
 
 /* header  */
-body {
+body {	
+font-family: 'Raleway', sans-serif !important;
   background: #f1f1f1; }
 
 header {
