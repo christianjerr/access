@@ -38,14 +38,25 @@ body {
   background: #f1f1f1;
   font-family: 'Quicksand', sans-serif; }
 
-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/wallpaper.jpg);
+.caruselone {
+  background: url(../img/home.png);
+  background-position: center;
+  background-size: cover; }
+
+.caruseltwo {
+  background: url(../img/home2.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; }
+
+.caruselthree {
+  background: url(../img/home3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+header {
   height: 100vh;
-  color: #ccc;
-  margin: auto;
-  width: 100%;
   background-attachment: fixed;
   /* greeting title */ }
   @media (max-width: 768px) {
@@ -63,11 +74,11 @@ header {
 
 /* access brusiour */
 .banner img {
-  width: 400px;
-  box-shadow: 5px 5px 5px black; }
+  width: 400px; }
   @media (max-width: 768px) {
     .banner img {
-      width: 200px; } }
+      width: 200px;
+      margin-left: 15%; } }
 
 /* all a tags */
 a {
@@ -199,5 +210,18 @@ a {
   100% {
     opacity: 0;
     transform: scale(1); } }
+/* carousel */
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px; }
+
+/* second container */
+.second-container {
+  padding-top: 300px; }
+  @media (max-width: 768px) {
+    .second-container {
+      padding-top: 0px; } }
 
 /*# sourceMappingURL=styles.css.map */

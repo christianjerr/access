@@ -1,11 +1,3 @@
-window.onload = function(){
-	greet();
-};
-
-/* greetings  */
-function greet(){
-	document.getElementById('my-title').setAttribute('style' , 'opacity : 1 ; transition : 10s');
-}
 
 
 /* scroll to about */
@@ -13,12 +5,12 @@ function greet(){
 function aboutUs(){
 	if(window.innerWidth > 768){
 		window.scrollTo({
-		top : 1300,
+		top : 1450,
 		behavior : 'smooth'
 		});
 	}else{
 		window.scrollTo({
-		top : 1650,
+		top : 2400,
 		behavior : 'smooth'
 		});
 	}
@@ -29,12 +21,12 @@ function aboutUs(){
 function admission(){
 	if(window.innerWidth > 768){		
 		window.scrollTo({
-			top : 1950,
+			top : 2080,
 			behavior : 'smooth'
 		});
 	}else{
 		window.scrollTo({
-			top : 3150,
+			top : 3710,
 			behavior : 'smooth'
 		});
 	}
@@ -45,12 +37,12 @@ function admission(){
 function missionVision(){
 	if(window.innerWidth > 768){
 		window.scrollTo({
-		top : 630,
+		top : 900,
 		behavior : 'smooth'
 		});
 	}else{
 		window.scrollTo({
-		top : 950,
+		top : 1770,
 		behavior : 'smooth'
 	});
 	}
@@ -62,17 +54,48 @@ function missionVision(){
 function courses(){
 	if(window.innerWidth > 768){		
 		window.scrollTo({
-			top : 2800,
+			top : 2700,
 			behavior : 'smooth'
 		});
 	}else{
 		window.scrollTo({
-			top : 4030,
+			top : 4430,
 			behavior : 'smooth'
 		});
 	}
 	
 }
+
+
+/* courses */
+function campuses(){
+	if(window.innerWidth > 768){		
+		window.scrollTo({
+			top : 370,
+			behavior : 'smooth'
+		});
+	}else{
+		window.scrollTo({
+			top : 400,
+			behavior : 'smooth'
+		});
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* zoom effects */
 
@@ -102,7 +125,7 @@ document.onreadystatechange = function () {
          document.getElementById('load').style.visibility="hidden";
          document.getElementById('contents').style.visibility="visible";
 		 document.body.style.background = "";
-      },2000);
+      },900);
   }
 }
 
