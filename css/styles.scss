@@ -166,6 +166,7 @@ a{
 
 
 /* preloader */
+
 #loader {
     bottom: 0;
     height: 175px;
@@ -175,8 +176,10 @@ a{
     right: 0;
     top: 0;
     width: 175px;
+	
 }
 #loader {
+	
     bottom: 0;
     height: 175px;
     left: 0;
@@ -273,6 +276,7 @@ a{
     position: absolute;
     right: 0;
     width: 180px;
+	
 }
 @keyframes load {
 100% {
