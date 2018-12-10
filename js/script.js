@@ -70,7 +70,7 @@ campusButton.addEventListener('click' , function(){
 			document.getElementsByTagName('header')[0].setAttribute('style' , 'margin-bottom : 0px ; height : 100vh');	
 		
 		}else{
-			document.getElementsByTagName('header')[0].setAttribute('style' , 'margin-bottom : 1300px ; height : 100vh');	
+			document.getElementsByTagName('header')[0].setAttribute('style' , 'margin-bottom : 1500px ; height : 100vh');	
 		}
 		Array.from(hiddenCampus).forEach(function(item){
 			item.setAttribute('style' , 'opacity : 0 ; visibility : hidden ; transition : .5s ;')
