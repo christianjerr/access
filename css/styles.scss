@@ -124,8 +124,8 @@ header{
 	
 	
 	@include small-screen{
-		height : 100%;
-		padding-bottom : 50px;
+		height : 100vh;
+		margin-bottom: 900px;
 		}
 	
 	
@@ -328,4 +328,15 @@ a{
 		padding-top: 0px;
 	
 		}
+}
+
+
+
+
+
+/* some hidden branches */
+
+.hide{
+	opacity : 0;
+	visibility : hidden;
 }

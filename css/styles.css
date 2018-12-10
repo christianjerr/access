@@ -61,8 +61,8 @@ header {
   /* greeting title */ }
   @media (max-width: 768px) {
     header {
-      height: 100%;
-      padding-bottom: 50px; } }
+      height: 100vh;
+      margin-bottom: 900px; } }
   header #my-title {
     font-size: 70px;
     text-shadow: 0px 0px 5px black;
@@ -223,5 +223,10 @@ a {
   @media (max-width: 768px) {
     .second-container {
       padding-top: 0px; } }
+
+/* some hidden branches */
+.hide {
+  opacity: 0;
+  visibility: hidden; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,88 +1,5 @@
 
 
-/* scroll to about */
-
-function aboutUs(){
-	if(window.innerWidth > 768){
-		window.scrollTo({
-		top : 1450,
-		behavior : 'smooth'
-		});
-	}else{
-		window.scrollTo({
-		top : 2400,
-		behavior : 'smooth'
-		});
-	}
-	
-}
-/* scroll to admission */
-
-function admission(){
-	if(window.innerWidth > 768){		
-		window.scrollTo({
-			top : 2080,
-			behavior : 'smooth'
-		});
-	}else{
-		window.scrollTo({
-			top : 3710,
-			behavior : 'smooth'
-		});
-	}
-	
-}
-
-/* mission vision */
-function missionVision(){
-	if(window.innerWidth > 768){
-		window.scrollTo({
-		top : 900,
-		behavior : 'smooth'
-		});
-	}else{
-		window.scrollTo({
-		top : 1770,
-		behavior : 'smooth'
-	});
-	}
-	
-}
-
-
-/* courses */
-function courses(){
-	if(window.innerWidth > 768){		
-		window.scrollTo({
-			top : 2700,
-			behavior : 'smooth'
-		});
-	}else{
-		window.scrollTo({
-			top : 4430,
-			behavior : 'smooth'
-		});
-	}
-	
-}
-
-
-/* courses */
-function campuses(){
-	if(window.innerWidth > 768){		
-		window.scrollTo({
-			top : 370,
-			behavior : 'smooth'
-		});
-	}else{
-		window.scrollTo({
-			top : 400,
-			behavior : 'smooth'
-		});
-	}
-	
-}
-
 
 
 
@@ -128,4 +45,42 @@ document.onreadystatechange = function () {
       },900);
   }
 }
+
+/* campuses js */
+
+let campusButton = document.getElementById('campus-btn');
+let campusStatus = false;
+
+campusButton.addEventListener('click' , function(){
+	let hiddenCampus = document.querySelectorAll('.hide');
+	
+	if(campusStatus == false){
+		document.getElementsByTagName('header')[0].setAttribute('style' , 'margin-bottom : 0px ; height : 100%');
+		
+		Array.from(hiddenCampus).forEach(function(item){
+			item.setAttribute('style' , 'opacity : 1 ; visibility : visible ; transition : 1s ')
+		});
+		
+		campusStatus = true;
+		campusButton.innerHTML = "Hide";
+		
+	}else if(campusStatus == true){
+		
+		if(window.innerWidth > 768){
+			document.getElementsByTagName('header')[0].setAttribute('style' , 'margin-bottom : 0px ; height : 100vh');	
+		
+		}else{
+			document.getElementsByTagName('header')[0].setAttribute('style' , 'margin-bottom : 900px ; height : 100vh');	
+		}
+		Array.from(hiddenCampus).forEach(function(item){
+			item.setAttribute('style' , 'opacity : 0 ; visibility : hidden ; transition : .5s ;')
+		});
+		
+		campusButton.innerHTML = "See more";
+		campusStatus = false;
+	}
+	
+	
+})
+
 
