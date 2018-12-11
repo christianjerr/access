@@ -14,6 +14,13 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	
+	
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	
+	
 	<title>Access Computer College | Home</title>
   </head>
   <body>
@@ -56,22 +63,22 @@
 		  </li>
 		  
 		  <li class="nav-item ">
-			<a class="nav-link" href="#campuses">Campuses </a>
+			<a class="nav-link"  id="campus-jump">Campuses </a>
 		  </li>
 		  
 		   <li class="nav-item">
-			<a class="nav-link " href="#mission-vision">Mission / Vision</a>
+			<a class="nav-link "  id="mission-jump">Mission / Vision</a>
 		  </li>
 		  
 		   <li class="nav-item">
-			<a class="nav-link "  href="#aboutus" >About us</a>
+			<a class="nav-link "   id="about-jump">About us</a>
 		  </li>
 		  
 		  <li class="nav-item">
-			<a class="nav-link "  href="#admission" >Admission</a>
+			<a class="nav-link "   id="admission-jump">Admission</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#courses">Courses</a>
+			<a class="nav-link" id="courses-jump">Courses</a>
 		  </li>
 		  
 		  
@@ -362,12 +369,11 @@ accesscubao2@yahoo.com</p>
 		
 	</header>
 		
-	<div class="row container mt-5 second-container" id="mission-vision">
+	<div class="row container mt-5 second-container " id="mission-vision">
+		<section class="col-md-6 mb-5 banner " ><img src="img/banner.png" ></section>
 		
-		<section class="col-md-6 mb-5 banner "><img src="img/banner.png" ></section>
-		
-		<section class="col-md-6 " >
-			<div class="card">
+		<section class="col-md-6 "  >
+			<div class="card" >
 			<h4 class="text-center card-header bg-dark text-light" >Mission</h4>
 			<div class="card-body">
 			<p class="card-text">To educate its students by means of curriculum grounded on practical application and technological integration along side the philosophy of the total academic, co and extra curricular experiences. We strive to prepare competent graduates aimed at changing the nation through competency and values, fulfilling its duty to our faculty, employees, students and society as true educational institution.</p>
@@ -1143,5 +1149,51 @@ Graduates of this program can choose to enter careers in various industries requ
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
+  
+  
+	<!-- smooth scroll -->
+	
+	<script type="module">
+		import jump from '../node_modules/jump.js/dist/jump.module.js';
+		
+		let missionJump = document.getElementById('mission-jump');
+		missionJump.addEventListener('click' , function(){
+			jump('#mission-vision', {
+				duration : 400
+			});
+		});
+		
+		
+		
+		let aboutJump = document.getElementById('about-jump');
+		aboutJump.addEventListener('click' , function(){
+			jump('#aboutus', {
+				duration : 400
+			});
+		});
+		
+		let campusJump = document.getElementById('campus-jump');
+		campusJump.addEventListener('click' , function(){
+			jump('#campuses', {
+				duration : 400
+			});
+		});
+		let admissionJump = document.getElementById('admission-jump');
+		admissionJump.addEventListener('click' , function(){
+			jump('#admission', {
+				duration : 400
+			});
+		});
+		let coursesJump = document.getElementById('courses-jump');
+		coursesJump.addEventListener('click' , function(){
+			jump('#courses', {
+				duration : 400
+			});
+		});
+		
+
+	</script>
+  
+  
   </body>
 </html>
