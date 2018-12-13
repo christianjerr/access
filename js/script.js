@@ -1,19 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* zoom effects */
 
 let h4 = document.getElementsByTagName('h4');
@@ -42,7 +27,7 @@ document.onreadystatechange = function () {
          document.getElementById('load').style.visibility="hidden";
          document.getElementById('contents').style.visibility="visible";
 		 document.body.style.background = "";
-      },900);
+      },100);
   }
 }
 

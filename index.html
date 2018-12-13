@@ -20,6 +20,7 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 	
+	<script src="https://unpkg.com/scrollreveal"></script>
 	
 	<title>Access Computer College | Home</title>
   </head>
@@ -368,10 +369,10 @@ accesscubao2@yahoo.com</p>
 		
 	</header>
 		
-	<div class="row container mt-5 second-container " id="mission-vision">
-		<section class="col-md-6 mb-5 banner " ><img src="img/banner.png" ></section>
+	<div class="row container mt-5 second-container " id="mission-vision" >
+		<section class="col-md-6 mb-5 banner " ><img src="img/banner.png" id="banner"></section>
 		
-		<section class="col-md-6 "  >
+		<section class="col-md-6 "  id="mission-vision-left">
 			<div class="card" >
 			<h4 class="text-center card-header bg-primary text-light" >Mission</h4>
 			<div class="card-body">
@@ -459,7 +460,7 @@ accesscubao2@yahoo.com</p>
 	
 	<h1 class="text-center   text-dark" id="courses">Courses</h1>
 	<br>
-	<div class="row container " align="center">
+	<div class="row container " align="center" id="courses-scroll">
 		<!--Here-->
 		<section class="mb-3 col-md-4">
 		<div class="card">
@@ -1192,6 +1193,46 @@ Graduates of this program can choose to enter careers in various industries requ
 		});
 		
 
+	</script>
+	
+	<script>
+		window.sr = ScrollReveal();
+        
+        sr.reveal('#banner', {
+          duration: 2000,
+          origin:'top',
+          distance:'300px',
+			delay : 100
+        });
+        sr.reveal('#mission-vision-left', {
+          duration: 2000,
+          origin:'bottom',
+		  distance: '300px',
+		  delay : 100
+        });
+		
+        sr.reveal('#courses-scroll', {
+          duration: 2000,
+          origin:'bottom',
+		  distance : '10px'
+        });
+		sr.reveal('#aboutus', {
+          duration: 2000,
+          origin:'bottom',
+		  distance : '10px',
+		  delay : 200
+		  
+        });
+		sr.reveal('#campuses', {
+          duration: 2000,
+          origin:'bottom',
+		  distance : '10px',
+		  delay : 200
+		  
+        });
+		
+	
+	
 	</script>
   
   
